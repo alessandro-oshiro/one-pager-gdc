@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="https://use.typekit.net/tsv0day.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <title>ModelRepo | Asset manager</title>
+</head>
+
+<body>
+    <!-- <div style="overflow: hidden"> -->
+    <div class="navbar">
+        <img class="logo" src="images/logo-branco.png" />
+        <button class="bar-item" onclick="openModal()">Subscribe</button>
+        <button class="bar-item" onclick="scroll()">Our service</button>
+    </div>
+    <video autoplay loop muted playsinline>
+        <source src="time_modelos.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+        <p style="color: white;" class="title">Value the time<br />of your team</p>
+        <p style="color: white;" class="body">Organize, catalog and search your 3D assets easily, with<br />our
+            artificial intelligence. Stop wasting time
+            digging<br />through hundreds of folders full of files. Find the 3D<br />model or material that you need
+            in
+            seconds.</p>
+        <button class="know-more-button" onclick="scroll()">Know more</button>
+    </div>
+    <div class="content" id="content">
+        <div class="header">
+            <p class="title">Focus on what is<br />really important</p>
+            <p class="body">
+                Don’t waste time organizing, searching and transferring files.
+                <br />Value your time.</p>
+        </div>
+        <div class="item">
+            <div class="text">
+                <img class="miniature" src="images/minature1.png" />
+                <p class="item-title">Organize your files</p>
+                <p class="item-description">Sync your files with our system and allow
+                    our AI catalog and label every 3D Asset you
+                    have. We will create easily searchable tags
+                    and organize all your thousands of files. </p>
+            </div>
+            <div class="image">
+                <img src="images/ui-1.png" />
+            </div>
+        </div>
+        <div class="item">
+            <div class="text">
+                <img class="miniature" src="images/minature2.png" />
+                <p class="item-title">Don’t waste hours<br />
+                    searching what you need</p>
+                <p class="item-description">With our cataloging and organizing, finding
+                    that 3D Model or Material that you need
+                    becomes much quicker. Search by tags or
+                    with a reference image.</p>
+            </div>
+            <div class="image">
+                <img src="images/ui-2.png" />
+            </div>
+        </div>
+        <div class="item">
+            <div class="text">
+                <img class="miniature" src="images/minature3.png" />
+                <p class="item-title">Utilize the assets of your
+                    whole team, right on your
+                    modeling software.</p>
+                <p class="item-description">With our system, your whole team stays
+                    connected. All your files will be available
+                    at any time, for easy handoff and sharing.
+                    And, all of this, with direct integration with
+                    your favorite modeling software.</p>
+            </div>
+            <div class="image">
+                <img src="images/ui-3.png" />
+            </div>
+        </div>
+        <div class="more-info">
+            <hr class="divider">
+            <div style="text-align: center;" class="get-to-know">Get to know more about ModelRepo</div>
+            <div style="text-align: center;" class="subscribe">Subscribe to our mailing list</div>
+            <button class="subscribe-button" onclick="openModal()">Subscribe now</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <span class="footer-text">If you have any questions, email us
+                at:<br /><strong>contato@real2u.com.br</strong></span>
+            <div class="real2u">
+                <a href="https://www.real2u.com.br/" target="_blank" style="text-decoration: none; color: white;">
+                    <span>powered by</span>
+                    <img class="real2u-logo" src="images/real2ulogo.png" />
+                </a>
+            </div>
+            <span class="copyright">Copyright © ModelRepo 2020. All rights reserved.</span>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div id="thankyou" style="display: none">
+            <button onclick="closeModal()"><img class="arrow" src="images/arrow-back.png" /></button>
+            <span class="thankyou-message">Thankyou for your message!<br />We will get back to you shortly!</span>
+            <button class="do-again-button" onclick="sendAgain()"> Subscribe again</button>
+        </div>
+        <div id="formulario">
+            <button onclick="closeModal()"><img class="arrow" src="images/arrow-back.png" /></button>
+            <span class="modal-text">Tell us your email and<br />we will reach to you!</span>
+            <form class="form" action="#" id="form" class="overlaydesk" method="post" name="form">
+                <div class="input-div">
+                    Name
+                    <input class="input" type="text" name="name" placeholder="John Doe" />
+                </div>
+                <div class="input-div">
+                    Email
+                    <input class="input" type="email" name="email" placeholder="john.doe@studioxyz.com" />
+                </div>
+                <div class="input-div">
+                    Company
+                    <input class="input" type="text" name="company" placeholder="Studio XYZ" />
+
+                </div>
+                <div class="input-div">
+                    Nº of employees
+                    <input class="input" type="text" name="employees" placeholder="47" />
+                </div>
+                <input class="submit-button" type="submit" value="Submit" id="Form-submit"
+                    onclick="post(event, '#form');" />
+            </form>
+        </div>
+    </div>
+    <!-- modal -->
+
+    <script>
+        function scroll() {
+            console.log('clickou')
+            var elmnt = document.getElementById("content");
+            elmnt.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openModal() {
+            console.log('class click')
+            let modal = document.getElementById("modal")
+            modal.classList.remove('modal')
+            modal.classList.remove('modal-off')
+            modal.classList.add('modal-on')
+        }
+        function closeModal() {
+            console.log('class click')
+            let modal = document.getElementById("modal")
+            modal.classList.remove('modal-on')
+            modal.classList.add('modal-off')
+        }
+        function sendAgain() {
+            document.getElementById("thankyou").style.display = "none"
+            document.getElementById("formulario").style.display = "inherit"
+        }
+        
+        const post = function (e, id) {
+            e.preventDefault();
+            $.ajax({
+                url: 'https://hooks.zapier.com/hooks/catch/5432450/o51dnxc/',
+                type: 'post',
+                data: $(id).serialize(),
+                success: function () {
+                    // Redirect to another success page
+                    document.getElementById("thankyou").style.display = "inherit"
+                    document.getElementById("formulario").style.display = "none"
+                }
+            });
+        };
+    </script>
+
+
+</body>
+
+</html>

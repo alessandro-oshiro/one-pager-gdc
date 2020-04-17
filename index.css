@@ -1,0 +1,288 @@
+video {
+    position: relative;
+    float: left;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 100vw;
+    height: auto;
+    -webkit-mask-box-image: url(waves.svg)
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.navbar {
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 60px;
+}
+
+.logo {
+    width: 240px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.bar-item {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    font-style: normal;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: white;
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    margin-top: 46px;
+}
+
+.content {
+    margin-left: calc(50%);
+    transform: translate(-50%);
+    width: 1132px;
+    height: auto;
+    float: left;
+    position: relative;
+    margin-top: 150px;
+}
+
+.hero-text {
+    position: absolute;
+    margin-top: 250px;
+    left: calc(50% - 566px)
+}
+
+.title {
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 76px;
+}
+
+.body {
+    text-align: left;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    font-style: normal;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-top: -50px
+}
+
+.know-more-button {
+    width: 218px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+.header {
+    width: 100%;
+}
+
+.item {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    list-style: none;
+}
+
+.text {
+    width: 32%;
+    float: left;
+    margin-top: 5%;
+}
+
+.item-title {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.miniature {
+    margin-bottom: -20px;
+    height: 110px;
+}
+
+.image {
+    float: right;
+    width: 57%;
+}
+
+.item-description {
+    text-align: left;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-top: -20px
+}
+
+.waves-bottom {
+    width: 100vw;
+    position: relative;
+    margin-bottom: -8px;
+    margin-left: -8px;
+}
+
+.more-info {
+    position: relative;
+    margin-top: 150px;
+    height: auto;
+}
+
+.divider {
+    width: 100%;
+    border: 0.5px solid black;
+    margin-bottom: 150px;
+}
+
+.get-to-know {
+    margin: auto;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.subscribe {
+    margin: auto;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.subscribe-button {
+    margin-top: 30px;
+    margin-left: calc(50% - 109px);
+    width: 218px;
+    height: 55px;
+    background-color: black;
+    border-radius: 10px;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+.footer {
+    background-size: cover;
+    background-image: url("images/waves-bottom.png");
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: -8px;
+    float: left;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+}
+
+.footer-container {
+    width: 1132px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.footer-text {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    top: 120px;
+    width: 400px;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+.real2u {
+    width: 172px;
+    position: absolute;
+    left: 50%;
+    margin-left: -86px;
+    top: 200px;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+}
+
+.real2u-logo {
+    margin-left: 1px;
+    position: absolute;
+    height: 32px;
+}
+
+.copyright {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    top: 300px;
+    width: 400px;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: white;
+}
+
+@media screen and (min-width: 2400px) {
+    .hero-text {
+        position: absolute;
+        margin-top: 350px;
+        left: calc(50% - 566px)
+    }
+}
