@@ -286,3 +286,128 @@ button {
         left: calc(50% - 566px)
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 80vw;
+        margin-top: 50px;
+        margin-left: calc(10vw);
+        transform: translate(0%);
+    }
+    .hero-text {
+        width: 100%;
+        margin-top: 150px;
+        left: 0
+    }
+    .title {
+        text-align: center;
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .body {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0px
+    }
+    .know-more-button {
+        transform: translate(-50%);
+        margin-left: 50%;
+    }
+    .item {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        list-style: none;
+    }
+    .text {
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .item-title {
+        text-align: center;
+        font-family: azo-sans-web, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .miniature {
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-bottom: -20px;
+        height: 110px;
+    }
+    .image {
+        margin-top: 20px;
+        float: none;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .item-description {
+        text-align: center;
+        font-family: azo-sans-web, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        font-style: normal;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin-top: 0px
+    }
+    .waves-bottom {
+        width: 100vw;
+        position: relative;
+        margin-bottom: -8px;
+        margin-left: -8px;
+    }
+    .more-info {
+        position: relative;
+        margin-top: 150px;
+        height: auto;
+    }
+    .divider {
+        width: 100%;
+        border: 0.5px solid black;
+        margin-bottom: 150px;
+    }
+    .get-to-know {
+        margin: auto;
+        text-align: center;
+        letter-spacing: 0px;
+        opacity: 1;
+        font-family: azo-sans-web, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .subscribe {
+        margin: auto;
+        text-align: center;
+        letter-spacing: 0px;
+        opacity: 1;
+        font-family: azo-sans-web, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .subscribe-button {
+        margin-top: 30px;
+        margin-left: calc(50% - 109px);
+        width: 218px;
+        height: 55px;
+        background-color: black;
+        border-radius: 10px;
+        font-family: azo-sans-web, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+        color: white;
+    }
+}

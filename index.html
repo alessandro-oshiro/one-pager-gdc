@@ -16,7 +16,7 @@
     <div class="navbar">
         <img class="logo" src="images/logo-branco.png" />
         <button class="bar-item" onclick="openModal()">Subscribe</button>
-        <button class="bar-item" onclick="scroll()">Our service</button>
+        <button class="bar-item" onclick="scrollToContent()">Our service</button>
     </div>
     <video autoplay loop muted playsinline>
         <source src="time_modelos.mp4" type="video/mp4">
@@ -28,7 +28,7 @@
             digging<br />through hundreds of folders full of files. Find the 3D<br />model or material that you need
             in
             seconds.</p>
-        <button class="know-more-button" onclick="scroll()">Know more</button>
+        <button class="know-more-button" onclick="scrollToContent()">Know more</button>
     </div>
     <div class="content" id="content">
         <div class="header">
@@ -46,9 +46,9 @@
                     have. We will create easily searchable tags
                     and organize all your thousands of files. </p>
             </div>
-            <div class="image">
-                <img src="images/ui-1.png" />
-            </div>
+            <!-- <div > -->
+                <img class="image" src="images/ui-1.png" />
+            <!-- </div> -->
         </div>
         <div class="item">
             <div class="text">
@@ -60,9 +60,9 @@
                     becomes much quicker. Search by tags or
                     with a reference image.</p>
             </div>
-            <div class="image">
-                <img src="images/ui-2.png" />
-            </div>
+            <!-- <div > -->
+                <img class="image" src="images/ui-2.png" />
+            <!-- </div> -->
         </div>
         <div class="item">
             <div class="text">
@@ -76,9 +76,9 @@
                     And, all of this, with direct integration with
                     your favorite modeling software.</p>
             </div>
-            <div class="image">
-                <img src="images/ui-3.png" />
-            </div>
+            <!-- <div > -->
+                <img class="image" src="images/ui-3.png" />
+            <!-- </div> -->
         </div>
         <div class="more-info">
             <hr class="divider">
@@ -137,7 +137,8 @@
     <!-- modal -->
 
     <script>
-        function scroll() {
+
+        function scrollToContent() {
             console.log('clickou')
             var elmnt = document.getElementById("content");
             elmnt.scrollIntoView({ behavior: 'smooth' });
@@ -174,6 +175,7 @@
                 }
             });
         };
+
     </script>
 
 
