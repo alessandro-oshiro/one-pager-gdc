@@ -76,7 +76,7 @@ button {
     line-height: 76px;
 }
 
-.body {
+.body-text {
     text-align: left;
     font-family: azo-sans-web, sans-serif;
     font-weight: 300;
@@ -304,7 +304,7 @@ button {
         font-size: 38px;
         line-height: 45px;
     }
-    .body {
+    .body-text {
         text-align: center;
         font-size: 16px;
         line-height: 20px;
@@ -358,56 +358,36 @@ button {
         opacity: 1;
         margin-top: 0px
     }
-    .waves-bottom {
-        width: 100vw;
-        position: relative;
-        margin-bottom: -8px;
-        margin-left: -8px;
-    }
     .more-info {
         position: relative;
-        margin-top: 150px;
+        margin-top: 100px;
         height: auto;
     }
     .divider {
-        width: 100%;
-        border: 0.5px solid black;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     .get-to-know {
         margin: auto;
         text-align: center;
-        letter-spacing: 0px;
-        opacity: 1;
-        font-family: azo-sans-web, sans-serif;
-        font-weight: 700;
-        font-style: normal;
         font-size: 50px;
         line-height: 50px;
     }
     .subscribe {
         margin: auto;
         text-align: center;
-        letter-spacing: 0px;
-        opacity: 1;
-        font-family: azo-sans-web, sans-serif;
-        font-weight: 300;
-        font-style: normal;
         font-size: 30px;
-        line-height: 70px;
     }
     .subscribe-button {
         margin-top: 30px;
         margin-left: calc(50% - 109px);
-        width: 218px;
-        height: 55px;
-        background-color: black;
-        border-radius: 10px;
-        font-family: azo-sans-web, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 20px;
-        line-height: 25px;
-        color: white;
+    }
+    .footer {
+        margin-top: 100px;
+        width: 100vw;
+    }
+    .footer-container {
+        width: 80vw;
     }
 }
+
+@media screen and (max-width: 900px) {}
