@@ -62,7 +62,7 @@
 
 .thankyou-message {
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   position: absolute;
   width: 100%;
   text-align: center;
@@ -153,4 +153,120 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 23px;
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-on {
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .modal {
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .modal-off {
+    top: 0px;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      right: -100vw
+    }
+    100% {
+      opacity: 1;
+      right: 0px;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      right: 4px;
+    }
+    100% {
+      opacity: 0;
+      right: -100vw
+    }
+  }
+  .thankyou-message {
+    left: 10vw;
+    top: 200px;
+    transform: translate(0, 0%);
+    width: 80vw;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .do-again-button {
+    top: 320px;
+    margin-left: calc(50% - 80px);
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .arrow {
+    width: 20px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+  }
+  .modal-text {
+    left: 10vw;
+    top: 200px;
+    margin-left: 0px;
+    width: 80vw;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .form {
+    width: calc(100% - 80px);
+    position: absolute;
+    left: 40px;
+    top: 350px;
+  }
+  .input {
+    width: 60%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 10px;
+    line-height: 20px;
+  }
+  .input-div {
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .submit-button {
+    margin-top: 50px;
+    margin-left: calc(50% - 80px);
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+  }
 }
