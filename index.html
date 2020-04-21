@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <style>html
-{
-width: 100%;
-height: 100%;
-margin: 0px;
-padding: 0px;
-overflow-x: hidden;
-}</style>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+    </style>
     <meta charset="utf-8" />
     <link rel="icon" href="" />
     <link rel="stylesheet" href="https://use.typekit.net/tsv0day.css">
@@ -30,7 +31,7 @@ overflow-x: hidden;
         <source src="time_modelos.mp4" type="video/mp4">
     </video>
     <div class="hero-text">
-        <p style="color: white;" class="title">Value the time<br />of your team</p>
+        <p style="color: white;" class="title">Focus on what<br />really matters</p>
         <p style="color: white;" class="body-text">Organize, catalog and search your 3D assets easily, with<br />our
             artificial intelligence. Stop wasting time
             digging<br />through hundreds of folders full of files. Find the 3D<br />model or material that you need
@@ -40,9 +41,8 @@ overflow-x: hidden;
     </div>
     <div class="content" id="content">
         <div class="header">
-            <p class="title">Focus on what is<br />really important</p>
-            <p class="body-text">
-                Don’t waste time organizing, searching and transferring files. Value your own time.</p>
+            <p class="title-header">
+                Organize, catalog, search and share your 3D files easily. Save hundreds of work hours.</p>
         </div>
         <div class="item">
             <div class="text">
@@ -53,39 +53,46 @@ overflow-x: hidden;
                     have. We will create easily searchable tags
                     and organize all your thousands of files. </p>
             </div>
-            <!-- <div > -->
-                <img class="image" src="images/ui-1.png" />
-            <!-- </div> -->
+            <img class="image" src="images/ui-2.png" />
         </div>
         <div class="item">
             <div class="text">
                 <img class="miniature" src="images/minature2.png" />
-                <p class="item-title">Don’t waste hours<br />
-                    searching what you need</p>
+                <p class="item-title">Dig through all your assets in seconds</p>
                 <p class="item-description">With our cataloging and organizing, finding
                     that 3D Model or Material that you need
                     becomes much quicker. Search by tags or
                     with a reference image.</p>
             </div>
-            <!-- <div > -->
-                <img class="image" src="images/ui-2.png" />
-            <!-- </div> -->
+            <img class="image" src="images/ui-1.png" />
         </div>
         <div class="item">
-            <div class="text">
+            <div class="text" style="margin-top: 5px;">
                 <img class="miniature" src="images/minature3.png" />
-                <p class="item-title">Utilize the assets of your
-                    whole team, right on your
-                    modeling software.</p>
-                <p class="item-description">With our system, your whole team stays
+                <p class="item-title">Your modeling and game development team synced across every platform.</p>
+                <p class="item-description">With our system, your whole staff stays
                     connected. All your files will be available
                     at any time, for easy handoff and sharing.
                     And, all of this, with direct integration with
-                    your favorite modeling software.</p>
+                    your favorite software.</p>
+                <div class="engine-logos-container">
+                    <img class="engine-logo" src="images/blender-logo.png" />
+                    <img class="engine-logo" src="images/maya-logo.png" />
+                    <img class="engine-logo" src="images/3ds-logo.png" />
+                    <img class="engine-logo" src="images/unity-logo.png" />
+                    <img class="engine-logo" src="images/unreal-logo.png" />
+                </div>
             </div>
-            <!-- <div > -->
-                <img class="image" src="images/ui-3.png" />
-            <!-- </div> -->
+            <img class="image" src="images/ui-3.png" />
+        </div>
+        <div class="item">
+            <div class="text" style="margin-top: 5px;">
+                <img class="miniature" src="images/minature4.png" />
+                <p class="item-title">Search through various libraries for 3D models and materials.</p>
+                <p class="item-description">Our Artifical Intelligence is capable of finding the best 3D model and
+                    materials that match your search perfectly. Save time on building diverse backgrounds and scenes.</p>
+            </div>
+            <img class="image" src="images/ui-4.png" />
         </div>
         <div class="more-info">
             <hr class="divider">
@@ -168,7 +175,7 @@ overflow-x: hidden;
             document.getElementById("thankyou").style.display = "none"
             document.getElementById("formulario").style.display = "inherit"
         }
-        
+
         const post = function (e, id) {
             e.preventDefault();
             $.ajax({
